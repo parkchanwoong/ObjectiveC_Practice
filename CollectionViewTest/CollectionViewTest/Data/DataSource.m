@@ -20,7 +20,7 @@
 {
     self = [super init];
     if (self) {
-        self.dataArray = [[NSMutableArray alloc]initWithObjects:@"A",@"B",@"뚜레쥬르",@"D",@"아이폰X",@"F",@"스타벅스",@"아주 긴 문장 ㅋㅋㅋ",@"팔만대장경",nil];
+        self.dataArray = [[NSMutableArray alloc]initWithObjects:@"A",@"B",@"뚜레쥬르",@"D",@"아이폰X",@"F",@"스타벅스",@"아주 긴 문장 ㅋㅋㅋ",@"갤럭시 짱짱짱",nil];
         
     }
     return self;

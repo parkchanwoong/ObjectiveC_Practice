@@ -52,15 +52,20 @@
 {
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
+    CAShapeLayer *border = [CAShapeLayer layer];
+    border.strokeColor = [UIColor blackColor].CGColor;
+    border.fillColor = nil;
+    border.lineDashPattern = @[@2, @3];
+    border.frame = cell.bounds;
+    border.path = [UIBezierPath bezierPathWithRoundedRect:cell.bounds cornerRadius:50.0].CGPath;
+    [cell.layer addSublayer:border];
+    
     cell.label.text = self.source.dataArray[indexPath.row];
-    cell.layer.borderColor = [UIColor blackColor].CGColor;
-    cell.layer.borderWidth = 1;
-    
-    
     return cell;
 }
 
 - (IBAction)longPressGesture:(UILongPressGestureRecognizer *)sender {
+    
     
     CGPoint point = [sender locationInView:self.mainCollectionView];
     
@@ -96,11 +101,9 @@
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    UILabel *label = [self.source.dataArray objectAtIndex:indexPath.row];
-
-//    return CGSizeMake(label.bounds.size.width, 100);
-    return CGSizeMake(100, 100);
-//    return [(NSString *)[self.source.dataArray objectAtIndex:indexPath.row] sizeWithAttributes:nil];
+//    UILabel *label = self.source.dataArray[indexPath.row];
+    
+    return CGSizeMake(100, 50);
 }
 
 - (void)didReceiveMemoryWarning {

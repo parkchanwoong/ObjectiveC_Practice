@@ -40,7 +40,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FF2-dW-PXk">
-                                                            <rect key="frame" x="10" y="0.0" width="30" height="50"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -50,8 +50,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="FF2-dW-PXk" secondAttribute="bottom" id="FEY-bi-Zgp"/>
                                                         <constraint firstItem="FF2-dW-PXk" firstAttribute="top" secondItem="ZMp-ci-Ft9" secondAttribute="top" id="lIp-Lc-O4a"/>
-                                                        <constraint firstItem="FF2-dW-PXk" firstAttribute="leading" secondItem="ZMp-ci-Ft9" secondAttribute="leading" constant="10" id="mMh-33-XpY"/>
-                                                        <constraint firstAttribute="trailing" secondItem="FF2-dW-PXk" secondAttribute="trailing" constant="10" id="o2l-6x-Ldg"/>
+                                                        <constraint firstItem="FF2-dW-PXk" firstAttribute="leading" secondItem="ZMp-ci-Ft9" secondAttribute="leading" id="mMh-33-XpY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="FF2-dW-PXk" secondAttribute="trailing" id="o2l-6x-Ldg"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
